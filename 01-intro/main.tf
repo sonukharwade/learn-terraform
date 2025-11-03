@@ -22,9 +22,6 @@ variable "z" {
     name = "JOhn"
     age = 20
 
-    name = "sonu"
-        age = 30
-
   }
 }
 
@@ -43,9 +40,7 @@ output "y1" {
 }
 
 output "z" {
-  value = join(", ", [
-    for person in var.z :
-    "Name - ${person.name}, Age - ${person.age}"
-  ])
+  value = "Name - ${var.z["name"]}, Age - ${var.z.age}"
 }
+
 
