@@ -21,6 +21,10 @@ variable "z" {
   default = {
     name = "JOhn"
     age = 20
+
+    name = "sonu"
+        age = 30
+
   }
 }
 
