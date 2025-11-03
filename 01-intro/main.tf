@@ -43,7 +43,10 @@ output "y1" {
 }
 
 output "z" {
-  value = "Name - ${var.z["name"]}, Age - ${var.z.age}"
+  value = [
+    for person in var.z :
+    "Name - ${person.name}, Age - ${person.age}"
+  ]
 }
 
 
