@@ -1,1 +1,1 @@
-input = "Devops"
+class = "Devops"
