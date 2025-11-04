@@ -43,4 +43,7 @@ output "z" {
   value = "Name - ${var.z["name"]}, Age - ${var.z.age}"
 }
 
-
+variable "input" {}
+output "input" {
+    value = var.input
+    }
